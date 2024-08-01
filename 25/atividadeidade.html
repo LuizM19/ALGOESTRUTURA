@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form>
+        <h3>Ano que nasceu</h3>
+        <input type="number" id="ano1">
+        <h3>Ano que estamos</h3>
+        <input type="number"  id="ano2">
+        <h3></h3>
+        <input type="submit" onclick="ano();return false">
+    </form>
+    <script>
+        function ano() {
+            var ano1 = document.getElementById(`ano1`).value;
+            var ano2 = document.getElementById(`ano2`).value;
+            var idade = (ano2-ano1);
+            window.alert("Sua idade é"+ idade);
+        }
+    </script>
+</body>
+
+</html>

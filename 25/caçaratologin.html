@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="login" id="login">
+        <h3>Senha</h3>
+        <input type="password" placeholder="Senha" id="Senha">
+        <h3></h3>
+        <input type="submit" onclick="logar();return false">
+    </form>
+    <script>
+        function logar() {
+            var login = document.getElementById(`login`).value;
+            var Senha = document.getElementById(`Senha`).value;
+
+
+            if (login == "caçarato" && Senha == "123"){
+                alert("Acesso confirmado");
+                location.href="https://github.com/dashboard"
+            }else{
+                alert("Acesso negado");
+            }
+        }
+    </script>
+</body>
+
+</html>

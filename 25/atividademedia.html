@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form>
+        <h3>1° Nota</h3>
+        <input type="number" id="nota1">
+        <h3>2° Nota</h3>
+        <input type="number" id="nota2">
+        <h3></h3>
+        <input type="submit" onclick="media(); return false">
+    </form>
+    <script>
+        function media() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var media = (nota1 + nota2) / 2;
+            alert("Sua media é" + media);
+
+        }
+    </script>
+</body>
+
+</html>

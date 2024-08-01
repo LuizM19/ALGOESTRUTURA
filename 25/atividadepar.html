@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par e impar</title>
+</head>
+
+<body>
+    <form>
+        <h3>1° numero</h3>
+        <input type="number" id="num1">
+
+        <h3></h3>
+        <input type="submit" onclick="pareimpar();return false">
+    </form>
+    <script>
+        function pareimpar() {
+            var num1 = parseInt(document.getElementById('num1')).value;
+            var result = parseInt(num1 % 2);
+            if (result === 0) {
+                alert("O numero é par");
+            } else {
+                alert("O numero é impar");
+            }
+        }
+    </script>
+</body>
+
+</html>
