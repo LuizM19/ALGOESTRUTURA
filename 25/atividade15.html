@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+</head>
+
+<body>
+    <script>
+        let alunos = [];
+        function letdadosalunos() {
+            let nome = document.getElementById('nome').value;
+            let faltas = parseInt(document.getElementById('faltas').value);
+            let media = parseFloat(document.getElementById('media').value);
+
+            let aluno = {
+                nome: nome,
+                faltas: faltas,
+                media: media
+
+            };
+            alunos.push(aluno);
+
+            document.getElementById(`alunoform`).reset();
+
+            exibiralunos();
+
+
+
+        }
+        for (let i = 0; i < 4; i++) {
+            letdadosalunos();
+        }
+        window.alert("Listagem dos alunos:");
+        for (let aluno of alunos) {
+            window.alert(`nome: ${aluno.nome}, faltas: ${aluno.faltas}, média: ${aluno.media}`);
+        }
+
+    </script>
+</body>
+
+</html>
